@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        ul {
+            list-style-type: none;
+        }
+        /* Header and Navigation */
+        header {
+            background-color: #4f555a;
+            padding: 1rem;
+            color: #ffffff;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 1rem;
+        }
+        nav a {
+            color: rgb(255, 254, 254);
+            font-weight: bold;
+        }
+        .home {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            background-color: #A1B4B8;
+        }
+        .home h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .home img {
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        #about {
+            padding: 3rem;
+            background-color: #333;
+            color: #fff;
+        }
+        .about-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem;
+        }
+        .about-content h3 {
+            margin-bottom: 1rem;
+        }
+        #skills {
+            background-color: #576062;
+            padding: 3rem;
+            color: #000000;
+        }
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+        }
+        #projects {
+            padding: 3rem;
+            background-color: #969a9d;
+            color: #000;
+        }
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem;
+        }
+        .project {
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .demo-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: black;
+        }
+        #contact {
+            background-color: #4f555a;
+            padding: 3rem;
+            text-align: center;
+            color: #000;
+        }
+        #contact a{ color: white;}
+        footer {
+            background-color: #333;
+            color: #000000;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="home" id="home">
+        <div>
+            <h1>Hello I'm Sahana.C</h1>
+            <p>I am a skilled web developer with a passion for creating engaging and user-friendly web experiences.</p>
+        </div>
+        <div>
+            <img src="me.jpg" alt="Profile Photo">
+        </div>
+    </div>
+    <div id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="background">
+               <div><h3>Background</h3>
+                <p>I have a strong background in computer science and a passion for coding. I am graduating with a degree in Information Science and Engineering from NIE Institute of Technology, Mysore, and have been honing my skills in web development ever since.</p>
+           </div> <br>
+        <div>
+            <h3>Language</h3>
+            <ul>
+                <li>Kannada</li>
+                <li>English</li>
+                <li>Hindi</li>
+            </ul>
+        </div> </div>
+            <div class="education">
+                <h3>Education</h3>
+                <ul>
+                    <li>
+                        <h4>Bachelor of Engineering</h4>
+                        <p><b>Information Science and Engineering</b></p>
+                        <p>NIE Institute of technology, Mysore</p>
+                        <p>Pursuing 3rd Year</p>
+                    </li>
+                    <br>
+                    <li>
+                        <h4>Pre-University</h4>
+                        <b>Class XII (PCMB)</b>
+                        <p>Alpha PU College, K R Nagar, Mysore</p>
+                        <p>Percentage: 93.5%</p>
+                        <p>[2019- 2021]</p>
+                    </li>
+                    <li>
+                        <b>Class X</b>
+                        <p>Adarsha Vidyalaya, K R Nagar, Mysore</p>
+                        <p>Percentage: 92.16%</p>
+                        <p>[Year of Completion -April 2019]</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Responsive Design</li>
+            <li>Cross-Browser Compatibility</li>
+        </ul>
+    </div>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project" data-slide="true">
+                <h3>Project 1: Sudoku Management System</h3>
+                <p class="project-description">Project Description: The Sudoku Management System is a comprehensive platform 
+                    designed for players to register, login, and enjoy Sudoku games. 
+                    Key features include a leaderboard to track completion times, 
+                    player questions with admin responses, and a subscription-based model for competitive gameplay.</p>
+                <div class="more-details">
+                    <p><strong>Database Schema:</strong></p>
+                    <ul>
+                        <li>Admin Table: Fields - admin_id, admin_name, email, password</li>
+                        <li>Player1 Table: Fields - player_id, player_name, email, password</li>
+                        <li>Subscription Table: Fields - subc_id, player_name, subc_type, amount, game_type, end_date</li>
+                        <li>Payment Table: Fields - payment_id, subc_id, player_name, pay_mode, date_time</li>
+                        <li>Questions Table: Fields - question_id, player_name, email, question</li>
+                        <li>Replies Table: Fields - reply_id, player_name, question_id, reply</li>
+                    </ul>
+                    <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, PHP, MySQL, PHPMyAdmin, XAMPP server</p>
+                    <p> Github link:"https://github.com/sahanac2004/sudoku.git"</p>
+              
+                <a href="project1.mp4" >DEMO</a>
+            </div>
+                <a href="#projects" class="demo-link">More</a>
+            </div>
+            <div class="project" data-slide="true">
+                <h3>Project 2:Tic-Tac-Toe</h3>
+                <p class="project-description">Project Description: This is a comprehensive Tic-Tac-Toe game. 
+                    The game allows two players to compete by taking turns placing their marks 
+                    (X and O) on a 3x3 grid. The objective is to get three of their marks in a 
+                    row (horizontally, vertically, or diagonally) to win the game.</p>
+                     
+                    <div class="more-details">
+                        <P>Key features 
+                            of the game include dynamic game board creation using JavaScript, 
+                            player turn tracking and switching, win condition checking, draw condition 
+                            checking, and a reset button to start a new game.</P>
+                <p><strong>Technologies Used: </strong>HTML, CSS, JavaScript.</p>
+                <p>Github link:"https://github.com/sahanac2004/PRODIGY_WD_03.git"</p>  </div>
+                <a href="#" class="demo-link">More</a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Name:Sahana C</p>
+        <p>Phone:9071308208</p>
+        <p>Feel free to reach out to me at <a href="mailto:sahanac629@gmail.com">sahanac629@gmail.com</a> 
+        <p>linkedin <a href="https://www.linkedin.com/in/sahanac2004/" target="_blank">
+            <i class="bi bi-linkedin"></i>
+        </a></p>
+        <p>Github </p> <a href="https://github.com/sahanac2004" target="_blank">
+                <img src="https://cdn0.iconfinder.com/data/icons/logos-and-brands/512/143_Github_Alt_logo_logos-64.png" alt="GitHub logo">
+            </a>
+
+        </p>
+        for collaboration, job opportunities, or just to say hello!</p>
+    </section>
+    <footer>
+        <p>&copy; Sahana C 2023</p>
+    </footer>
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const targetId = event.target.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        const projectDetails = document.querySelectorAll('.project');
+        projectDetails.forEach(project => {
+            const moreLink = project.querySelector('.demo-link');
+            const details = project.querySelector('.more-details');
+            moreLink.addEventListener('click', () => {
+                if (details.style.display === 'none') {
+                    details.style.display = 'block';
+                    moreLink.textContent = 'Less';
+                } else {
+                    details.style.display = 'none';
+                    moreLink.textContent = 'More';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
