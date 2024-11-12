@@ -2,281 +2,380 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        a {
-            text-decoration: none;
-            color: #007bff;
-        }
-        ul {
-            list-style-type: none;
-        }
-        /* Header and Navigation */
-        header {
-            background-color: #4f555a;
-            padding: 1rem;
-            color: #ffffff;
-        }
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-        nav li {
-            margin: 0 1rem;
-        }
-        nav a {
-            color: rgb(255, 254, 254);
-            font-weight: bold;
-        }
-        .home {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 80vh;
-            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background-image.jpg');
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-            text-align: center;
-            background-color: #A1B4B8;
-        }
-        .home h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        .home img {
-            width: 50%;
-            height: 50%;
-            border-radius: 75% 35% 75% 35%;
-            margin-bottom: 1rem;
-        }
-        #about {
-            padding: 3rem;
-            background-color: #333;
-            color: #fff;
-        }
-        .about-content {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 2rem;
-        }
-        .about-content h3 {
-            margin-bottom: 1rem;
-        }
-        #skills {
-            background-color: #576062;
-            padding: 3rem;
-            color: #000000;
-        }
-        .skills-list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 1rem;
-        }
-        #projects {
-            padding: 3rem;
-            background-color: #969a9d;
-            color: #000;
-        }
-        .project-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 2rem;
-        }
-        .project {
-            border: 1px solid #ddd;
-            padding: 1.5rem;
-            text-align: center;
-        }
-        .demo-link {
-            display: inline-block;
-            margin-top: 1rem;
-            color: black;
-        }
-        #contact {
-            background-color: #4f555a;
-            padding: 3rem;
-            text-align: center;
-            color: #000;
-        }
-        #contact a{ color: white;}
-        footer {
-            background-color: #333;
-            color: #000000;
-            padding: 1rem;
-            text-align: center;
-        }
-    </style>
+    <title>Responsive Portfolio Website Design</title>
+     <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="home" id="home">
-        <div>
-            <h1>Hello I'm Sahana.C</h1>
-            <p>I am a skilled web developer with a passion for creating engaging and user-friendly web experiences.</p>
-        </div>
-        <div>
-            <img src="me.jpg" alt="Profile Photo">
-        </div>
-    </div>
-    <div id="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="background">
-               <div><h3>Background</h3>
-                <p>I have a strong background in computer science and a passion for coding. I am graduating with a degree in Information Science and Engineering from NIE Institute of Technology, Mysore, and have been honing my skills in web development ever since.</p>
-           </div> <br>
-        <div>
-            <h3>Language</h3>
-            <ul>
-                <li>Kannada</li>
-                <li>English</li>
-                <li>Hindi</li>
-            </ul>
-        </div> </div>
-            <div class="education">
-                <h3>Education</h3>
-                <ul>
-                    <li>
-                        <h4>Bachelor of Engineering</h4>
-                        <p><b>Information Science and Engineering</b></p>
-                        <p>NIE Institute of technology, Mysore</p>
-                        <p>Pursuing 3rd Year</p>
-                    </li>
-                    <br>
-                    <li>
-                        <h4>Pre-University</h4>
-                        <b>Class XII (PCMB)</b>
-                        <p>Alpha PU College, K R Nagar, Mysore</p>
-                        <p>Percentage: 93.5%</p>
-                        <p>[2019- 2021]</p>
-                    </li>
-                    <li>
-                        <b>Class X</b>
-                        <p>Adarsha Vidyalaya, K R Nagar, Mysore</p>
-                        <p>Percentage: 92.16%</p>
-                        <p>[Year of Completion -April 2019]</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div id="skills">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Java</li>
-            <li>Responsive Design</li>
-            <li>Cross-Browser Compatibility</li>
-        </ul>
-    </div>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project" data-slide="true">
-                <h3>Project 1: Sudoku Management System</h3>
-                <p class="project-description">Project Description: The Sudoku Management System is a comprehensive platform 
-                    designed for players to register, login, and enjoy Sudoku games. 
-                    Key features include a leaderboard to track completion times, 
-                    player questions with admin responses, and a subscription-based model for competitive gameplay.</p>
-                <div class="more-details">
-                    <p><strong>Database Schema:</strong></p>
-                    <ul>
-                        <li>Admin Table: Fields - admin_id, admin_name, email, password</li>
-                        <li>Player1 Table: Fields - player_id, player_name, email, password</li>
-                        <li>Subscription Table: Fields - subc_id, player_name, subc_type, amount, game_type, end_date</li>
-                        <li>Payment Table: Fields - payment_id, subc_id, player_name, pay_mode, date_time</li>
-                        <li>Questions Table: Fields - question_id, player_name, email, question</li>
-                        <li>Replies Table: Fields - reply_id, player_name, question_id, reply</li>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-s"></i>
+                    <div class="logo-text">Sahana C</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                         <li><a href="#">Resume</a></li> 
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+        
                     </ul>
-                    <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, PHP, MySQL, PHPMyAdmin, XAMPP server</p>
-                    <p> Github link:"https://github.com/sahanac2004/sudoku.git"</p>
-              
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="me.jpeg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Sahana C</h1>
+                    <p> I am an aspiring Information Science and Engineering graduate with a strong foundation in coding.
+                         Eager to contribute my skills and passion for technology to a dynamic team, while continuing to
+                         learn and grow in a professional environment.
+                    </p>
+                    <div class="btn-group">
+                       <a href="https://drive.google.com/file/d/1RpKey4HisD2flMnMGPHGddkBIedJmGOn/view?usp=drivesdk" class="btn active">Download CV</a>
+                       <a href="#contact" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="mailto:sahanac629@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/sahanac2004" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/sahanac2004" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/your-profile" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
             </div>
-                <a href="#projects" class="demo-link">More</a>
-            </div>
-            <div class="project" data-slide="true">
-                <h3>Project 2:Tic-Tac-Toe</h3>
-                <p class="project-description">Project Description: This is a comprehensive Tic-Tac-Toe game. 
-                    The game allows two players to compete by taking turns placing their marks 
-                    (X and O) on a 3x3 grid. The objective is to get three of their marks in a 
-                    row (horizontally, vertically, or diagonally) to win the game.</p>
-                     
-                    <div class="more-details">
-                        <P>Key features 
-                            of the game include dynamic game board creation using JavaScript, 
-                            player turn tracking and switching, win condition checking, draw condition 
-                            checking, and a reset button to start a new game.</P>
-                <p><strong>Technologies Used: </strong>HTML, CSS, JavaScript.</p>
-                <p>Github link:"https://github.com/sahanac2004/PRODIGY_WD_03.git"</p>  </div>
-                <a href="#" class="demo-link">More</a>
-            </div>
+        </div>
+    </div>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="me.jpeg">
+        </div>    
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h3><span class="inputa">Frontend Developer</span></h3>
+            <p>Known for excellent communication skills and the ability to work collaboratively within a team.</p>
+            <a href="#" class="btn">More About</a>
         </div>
     </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Name:Sahana C</p>
-        <p>Phone:9071308208</p>
-        <p>Feel free to reach out to me at <a href="mailto:sahanac629@gmail.com">sahanac629@gmail.com</a> 
-        <p>linkedin <a href="https://www.linkedin.com/in/sahanac2004/" target="_blank">
-            <i class="bi bi-linkedin"></i>
-        </a></p>
-        <p>Github </p> <a href="https://github.com/sahanac2004" target="_blank">
-                <img src="https://cdn0.iconfinder.com/data/icons/logos-and-brands/512/143_Github_Alt_logo_logos-64.png" alt="GitHub logo">
-            </a>
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>        
+        <div class="timeline-items">        
+        <div class="timeline-item">        
+        <div class="timeline-dot"></div>       
+        <div class="timeline-date">2021-Current</div>       
+        <div class="timeline-content">       
+        <h3>Bachelor of Engineering, Information Science and Engineering (ISE/IT)</h3>
+                <p>NIE North, Mysore | CGPA: 8.73/10 | Dec 2025</p>
+        </div>       
+        </div>
+        <div class="timeline-item">       
+            <div class="timeline-dot"></div>            
+            <div class="timeline-date">2021</div>           
+            <div class="timeline-content">           
+                <h3>Pre-University (XII), Science (PCMB)</h3>
+                <p>Alpha PU College, K R Nagar, Mysore | Percentage: 93.5% | May 2019 - June 2021</p>
+            </div>
+           </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>               
+                <div class="timeline-date">2019</div>                
+                <div class="timeline-content">                
+                    <h3>SSLC (X)</h3>
+                    <p>Adarsha Vidyalaya, K R Nagar, Mysore | Percentage: 92.2% | 2015 - 2019</p>    
+                </div>        
+        </div>
+     </section>
 
-        </p>
-        for collaboration, job opportunities, or just to say hello!</p>
+  
+    <section class="portfolio" id="projects">
+        <div class="main-text">
+            <h2><span>Latest </span>Projects</h2>
+        </div>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="project1.jpg" >
+                <div class="layer">
+                    <h3>Sudoku Management System</h3>
+                    <p> Built a web app for free Sudoku play and paid competitions. Implemented user roles (admin/player) with features like player data management, 
+                        subscriptions, and secure logins. Utilized PHP for back-end development and a MySQL database for efficient data storage</p>
+                    <a href="https://github.com/sahanac2004/sudoku.git"> <i class='bx bx-link-external'>CODE</i></a>
+                </div>
+            </div>
+    
+            <div class="row">
+                <img src="project2.jpg" >
+                <div class="layer">
+                    <h3>MediShield - Secure Medical Image  Steganography Platform</h3>
+                    <p> Developed MediShield, a secure medical image steganography platform using Django, integrating image processing libraries (stepic, PIL) and Bootstrap 
+                        for styling to encrypt and decrypt sensitive patient data within medical images.</p>
+                    <a href="https://github.com/sahanac2004/MediShield-.git"> <i class='bx bx-link-external'>CODE</i></a>
+                </div>
+            </div>
+    
+            <div class="row">
+                <img src="project3.jpg" >
+                <div class="layer">
+                    <h3>Tic Tac Toe</h3>
+                    <p>A simple game built using HTML, CSS, and JavaScript. 
+                        The game allows 2 players to take turns placing their marks (X & O)
+                         on a 3x3 grid, with the goal of getting three of their marks in a row 
+                        to win the game.</p>
+                    <a href="https://sahanac2004.github.io/TIC_TAC_TOE/"> <i class='bx bx-link-external'>DEMO</i></a>
+                </div>
+            </div>
+    
+            <div class="row"> 
+                <img src="project4.jpg" >
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>A simple weather app built with HTML, CSS, JavaScript, and the OpenWeatherMap API. 
+                        This app allows users to search for a location and displays the current weather conditions, temperature, humidity, and wind speed.</p>
+                    <a href="https://sahanac2004.github.io/WEATHER_APP/"><i class='bx bx-link-external'>DEMO</i></a>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <img src="project4.jpg" >
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>A simple weather app built with HTML, CSS, JavaScript, and the OpenWeatherMap API. 
+                        This app allows users to search for a location and displays the current weather conditions, temperature, humidity, and wind speed.</p>
+                    <a href="https://sahanac2004.github.io/WEATHER_APP/"><i class='bx bx-link-external'>DEMO</i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="project4.jpg" >
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>A simple weather app built with HTML, CSS, JavaScript, and the OpenWeatherMap API. 
+                        This app allows users to search for a location and displays the current weather conditions, temperature, humidity, and wind speed.</p>
+                    <a href="https://sahanac2004.github.io/WEATHER_APP/"><i class='bx bx-link-external'>DEMO</i></a>
+                </div>
+            </div> -->
+    
+    </section>
+    <div id="skills">
+        <h1 class="subtitle">My <span>Skills</span></h1>
+        <div class="sec">
+            <div class="container1">
+                <h1 class="heading1">Technical Skills</h1>
+                <div class="Technical-bars">
+                    <div class="bar">
+                        <div class="info">
+                            <span>HTML <span class="addhtml"></span></span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>CSS <span class="addcss"></span></span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>Javascript <span class="addpy"></span></span>
+                        </div>
+                        <div class="progress-line python">
+                            <span></span>
+                        </div>
+                    </div>
+                    
+                    <div class="bar">
+                        <div class="info">
+                            <span>Java <span class="addjava"></span></span>
+                        </div>
+                        <div class="progress-line java">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>MySQL<span class="addjava"></span></span>
+                        </div>
+                        <div class="progress-line java">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>Node.js<span class="addjava"></span></span>
+                        </div>
+                        <div class="progress-line java">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>C <span class="addc"></span></span>
+                        </div>
+                        <div class="progress-line cpls">
+                            <span></span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="container2">
+                <h1 class="heading1">Professional Skills</h1>
+                <div class="radial-bars">
+                    <div class="radial-bar">
+                        <svg viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="90"></circle>
+                            <circle class="path path-1" cx="100" cy="100" r="90"></circle>
+                        </svg>
+                        <div class="percentage">60%</div>
+                        <div class="text">ProblemSolving</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="90"></circle>
+                            <circle class="path path-2" cx="100" cy="100" r="90"></circle>
+                        </svg>
+                        <div class="percentage">70%</div>
+                        <div class="text">Creativity</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="90"></circle>
+                            <circle class="path path-3" cx="100" cy="100" r="90"></circle>
+                        </svg>
+                        <div class="percentage">80%</div>
+                        <div class="text">Communication</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="90"></circle>
+                            <circle class="path path-4" cx="100" cy="100" r="90"></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Teamwork</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me!</span></h2>
+            <h4>Get in touch...</h4>
+            <p>Feel free to reach out to me
+                for collaboration, job opportunities, or just to say hello!</p>
+            <div class="list"><ul>
+                <p><a href="#">+91 9071308208</a></p>
+            <p><a href="#">sahanac629@gmail.com</a></p>
+            </ul>
+               
+                
+            </div>
+    
+           <div class="contact-icons">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="#"><i class='bx bxl-youtube' ></i></a>
+            </div> 
+            
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="name" placeholder="Your Name " required>
+                <input type="email" placeholder="Your Email " required>
+                <input type="number" placeholder="your Mobile Number" required>
+                <textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You " required></textarea>
+                <input type="submit" value="Send Message" class="submit" required>
+            </form>
+    
+        </div>
     </section>
     <footer>
-        <p>&copy; Sahana C 2024</p>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <!-- <a href=""><i class="fa-brands fa-youtube"></i></a> -->
+            </div>
+            <div class="footerNav">
+                <ul><li><a href="#">Home</a></li>
+                    <!-- <li><a href="">News</a></li> -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <li><a href="">our Team</a></li> -->
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer">Sahana C</span></p>
+        </div>
     </footer>
-    <script>
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', (event) => {
-                event.preventDefault();
-                const targetId = event.target.getAttribute('href');
-                document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
-            });
+
+
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","Student","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
         });
-        const projectDetails = document.querySelectorAll('.project');
-        projectDetails.forEach(project => {
-            const moreLink = project.querySelector('.demo-link');
-            const details = project.querySelector('.more-details');
-            moreLink.addEventListener('click', () => {
-                if (details.style.display === 'none') {
-                    details.style.display = 'block';
-                    moreLink.textContent = 'Less';
-                } else {
-                    details.style.display = 'none';
-                    moreLink.textContent = 'More';
-                }
-            });
-        });
-    </script>
+        var typed=new Typed(".inputa",{
+            strings:["Frontend Developer","Student","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+       
+            const boxes = document.querySelectorAll('.services .services-content .box');
+        
+            window.addEventListener('scroll', checkBoxes);
+        
+            function checkBoxes() {
+                const triggerBottom = window.innerHeight / 5 * 4;
+        
+                boxes.forEach(box => {
+                    const boxTop = box.getBoundingClientRect().top;
+        
+                    if (boxTop < triggerBottom) {
+                        box.classList.add('show');
+                    } else {
+                        box.classList.remove('show');
+                    }
+                });
+            }
+        
+            checkBoxes();
+        </script>
+     
 </body>
 </html>
