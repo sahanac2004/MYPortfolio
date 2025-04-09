@@ -18,7 +18,7 @@ CSS
 JavaScript
 Bootstrap Icons
 License
-This portfolio website is licensed under the MIT License.
+
 
 Contact
 Feel free to reach out to me at sahanac629@gmail.com for collaboration, job opportunities, or just to say hello! You can also find me on LinkedIn at https://www.linkedin.com/in/sahanac2004/ and GitHub at https://github.com/sahanac2004.
